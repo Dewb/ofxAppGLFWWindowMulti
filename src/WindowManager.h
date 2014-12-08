@@ -24,6 +24,8 @@ class WindowManager{
 
         void pushWindow(int windowNo);
         void popWindow();
+    
+        int getNumWindows();
 
         void setWindowTitle(int windowNo, string title);
         void setWindowPosition(int windowNo, int x, int y);

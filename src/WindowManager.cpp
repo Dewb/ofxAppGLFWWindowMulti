@@ -78,6 +78,15 @@ void WindowManager::popWindow(){
 }
 
 //--------------------------------------------------------------
+int WindowManager::getNumWindows(){
+    if( windowPtr == NULL ){
+        ofLogError("WindowManager::getNumWindows") << UNSET_ERR;
+        return;
+    }
+    return windowPtr->getNumWindows();
+}
+
+//--------------------------------------------------------------
 void WindowManager::setWindowTitle(int windowNo, string title){
     if (windowPtr == NULL) {
         ofLogError("WindowManager::setWindowTitle") << UNSET_ERR;
