@@ -20,7 +20,7 @@ class WindowManager{
         int getActiveWindowNo();
         int getFocusedWindowNo();
 
-        void createWindow();
+        void createWindow(string windowName = "", float x = 0, float y = 0, float w = 1024, float h = 768, bool bFullscreen = false);
 
         void pushWindow(int windowNo);
         void popWindow();

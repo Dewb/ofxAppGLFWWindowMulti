@@ -51,12 +51,12 @@ int WindowManager::getFocusedWindowNo(){
     return windowPtr->getFocusedWindowNo();
 }
 //--------------------------------------------------------------
-void WindowManager::createWindow(){
+void WindowManager::createWindow(string windowName, float x, float y, float w, float h, bool bFullscreen){
     if( windowPtr == NULL ){
         ofLogError("WindowManager::createWindow") << UNSET_ERR;
         return;
     }
-    windowPtr->addWindow();
+    windowPtr->addWindow(windowName, x, y, w, h, bFullscreen);
 }
 
 //--------------------------------------------------------------
