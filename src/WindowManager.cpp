@@ -31,6 +31,11 @@ int WindowManager::getActiveWindowNo(){
 }
 
 //--------------------------------------------------------------
+int WindowManager::getNumWindows(){
+    return windowPtr->getNumWindows();
+}
+
+//--------------------------------------------------------------
 void WindowManager::createWindow(string windowName, float x, float y, float w, float h, bool bFullscreen){
     if( windowPtr == NULL ){
         ofLogError("WindowManager::createWindow") << " windowPtr needs to be set " << endl;

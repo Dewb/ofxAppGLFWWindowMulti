@@ -23,6 +23,7 @@ class WindowManager{
         void closeActiveWindow();
         
         int getActiveWindowNo();
+        int getNumWindows();
     
         ofxAppGLFWWindowMulti * getWindowPtr(); 
     
