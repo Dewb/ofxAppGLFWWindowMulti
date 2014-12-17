@@ -81,7 +81,7 @@ void WindowManager::popWindow(){
 int WindowManager::getNumWindows(){
     if( windowPtr == NULL ){
         ofLogError("WindowManager::getNumWindows") << UNSET_ERR;
-        return;
+        return -1;
     }
     return windowPtr->getNumWindows();
 }
